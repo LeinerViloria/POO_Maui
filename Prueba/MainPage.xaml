@@ -2,21 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:editors="clr-namespace:SDK.Frontend.Components.Editors;assembly=SDK.Frontend"
+             xmlns:local="clr-namespace:Prueba"
              x:Class="Prueba.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <editors:SDKComboBox Title="Seleccione un instrumento">
-                <editors:SDKComboBox.Data>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Elemento 1</x:String>
-                        <x:String>Elemento 2</x:String>
-                        <x:String>Elemento 3</x:String>
-                    </x:Array>
-                </editors:SDKComboBox.Data>
-            </editors:SDKComboBox>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <editors:SDKComboBox x:Name="ComboBox" Title="Seleccione un instrumento" />
         </VerticalStackLayout>
     </ScrollView>
 
