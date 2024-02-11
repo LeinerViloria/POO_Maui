@@ -8,7 +8,15 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <editors:SDKComboBox />
+            <editors:SDKComboBox Title="Seleccione un instrumento">
+                <editors:SDKComboBox.Data>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Elemento 1</x:String>
+                        <x:String>Elemento 2</x:String>
+                        <x:String>Elemento 3</x:String>
+                    </x:Array>
+                </editors:SDKComboBox.Data>
+            </editors:SDKComboBox>
         </VerticalStackLayout>
     </ScrollView>
 

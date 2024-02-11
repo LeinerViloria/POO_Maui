@@ -10,13 +10,12 @@ namespace Prueba
             var builder = MauiApp.CreateBuilder();
 
             builder.UseMauiApp<App>()
+                .BuilderManager()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-
-            builder.BuilderManager();
 
 #if DEBUG
     		builder.Logging.AddDebug();
