@@ -8,7 +8,7 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            
+            <editors:SDKComboBox />
         </VerticalStackLayout>
     </ScrollView>
 
