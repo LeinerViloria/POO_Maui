@@ -57,7 +57,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="../../SDK/SDK.Frontend/SDK.Frontend.csproj" />
+		<ProjectReference Include="../../MauiSDK/SDK.Frontend/SDK.Frontend.csproj" />
 	</ItemGroup>
 
 </Project>
