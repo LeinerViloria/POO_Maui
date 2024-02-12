@@ -1,18 +1,19 @@
 ﻿using System.Collections;
-using DevExpress.Data.Browsing;
+using Prueba.Entities;
+using Prueba.Utils;
 
 namespace Prueba
 {
     public partial class MainPage : ContentPage
     {
-        IList Items {get; set;}
+        IList<Instrument> Items {get; set;}
         string SelectedItem { get; set; } = "Ninguno está seleccionado";
 
         public MainPage()
         {
-            Items = new List<string>() { "Elemento 1", "Elemento 2", "Elemento 3" };
+            Items = Utils.Utils.GetDemoData();
             InitializeComponent();
-            ComboBox.Data = Items;
+            ComboBox.Data = (IList) Items;
             MainLabel.Text = SelectedItem;
         }
 
