@@ -7,7 +7,6 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
-            <Label x:Name="MainLabel" />
             <editors:SDKComboBox x:Name="ComboBox" Title="Seleccione un instrumento" OnChange="OnChangeItem" />
         </VerticalStackLayout>
     </ScrollView>
