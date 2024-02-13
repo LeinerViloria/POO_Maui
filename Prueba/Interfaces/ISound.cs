@@ -1,7 +1,7 @@
 
 namespace Prueba.Interfaces
 {
-    public interface ISound
+    public interface ISound : IInstrument
     {
         void Sound();
     }

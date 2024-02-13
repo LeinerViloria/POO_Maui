@@ -14,7 +14,6 @@ namespace Prueba
             InitializeComponent();
             ComboBox.Data = (IList) Items;
             ComboBox.Picker.ItemDisplayBinding = new Binding("Name");
-            MainLabel.Text = SelectedItem;
         }
 
         void OnChangeItem(dynamic Item, EventArgs e)
