@@ -23,7 +23,7 @@ namespace Prueba
             ItemSelected = Item;
             ImageElement.Source = ItemSelected.Image;
             TitleTag.Text = ItemSelected.Name;
-            TitleTag.Text = ItemSelected.Description;
+            DescriptionTag.Text = ItemSelected.Description;
         }
 
         void Sound(object sender, EventArgs args)
