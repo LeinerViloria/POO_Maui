@@ -2,12 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:editors="clr-namespace:SDK.Frontend.Components.Editors;assembly=SDK.Frontend"
-             xmlns:local="clr-namespace:Prueba"
              x:Class="Prueba.MainPage">
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
             <editors:SDKComboBox x:Name="ComboBox" Title="Seleccione un instrumento" OnChange="OnChangeItem" />
+
+            <HorizontalStackLayout MaximumWidthRequest="800">
+                <Image x:Name="ImageElement" WidthRequest="300" HeightRequest="300" />
+
+                <VerticalStackLayout>
+                    <Label x:Name="TitleTag" />
+                    <Label x:Name="DescriptionTag" LineHeight="1.8" />
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+
+            <Button Text="SONAR"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                    Clicked="Sound"
+                 />
         </VerticalStackLayout>
     </ScrollView>
 

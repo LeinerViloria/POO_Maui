@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using SDK.Frontend;
 
 namespace Prueba
 {
@@ -10,7 +9,6 @@ namespace Prueba
             var builder = MauiApp.CreateBuilder();
 
             builder.UseMauiApp<App>()
-                .BuilderManager()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
