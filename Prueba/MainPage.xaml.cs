@@ -28,6 +28,9 @@ namespace Prueba
 
         void Sound(object sender, EventArgs args)
         {
+            if (ItemSelected is null)
+                return;
+
             ISound Obj = ItemSelected;
             Obj.Sound();
         }
