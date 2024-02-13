@@ -5,7 +5,7 @@ namespace Prueba.Entities
     {
         public override void Sound()
         {
-            Console.WriteLine("Piano está sonando");
+            Console.WriteLine("Acordeon está sonando");
         }
     }
 }
